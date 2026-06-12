@@ -1,16 +1,61 @@
-# React + Vite
+# AI Resume Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered Resume Analyzer built using React, JavaScript, PDF.js, and the Gemini API. The application allows users to upload a PDF resume, extract its content, and receive AI-generated feedback including ATS score, strengths, weaknesses, missing skills, and interview questions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Upload PDF resumes
+* Extract text from PDF files using PDF.js
+* Analyze resumes using Gemini AI
+* Generate ATS-style feedback
+* Identify strengths and weaknesses
+* Suggest missing skills
+* Generate interview questions based on the resume
+* Simple and clean single-page interface
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React
+* JavaScript
+* Vite
+* PDF.js (`pdfjs-dist`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### AI Integration
+
+* Gemini API
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd resume-analyzer
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Create Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+## Learning Outcomes
+
+This project was built to strengthen practical React and JavaScript skills by working with real-world concepts such as file processing, API communication, state management, and AI integration.
+
